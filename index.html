@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    
+
+    <section>
+      <h1>Login Form - Alex</h1>
+      <form action="test.php" method="post" autocomplete="on">
+        <fieldset>
+          <label for="name">Name:</label>
+          <input id="name" type="text" name="name">
+        </fieldset>
+        <fieldset>
+          <label>Email:</label>
+          <input type="email" name="name">
+        </fieldset>
+        <fieldset>
+          <label>Password:</label>
+          <input type="password">
+        </fieldset>
+        <fieldset>
+          <input type="checkbox">
+          <label>Remember me?</label>
+        </fieldset>
+        <input type="submit" value="Save">
+      </form>
+    </section>
+    
+    <section>
+      <h1>Option Group - Charlie</h1>
+      <form action="test.php" method="post">
+        <select>
+          <optgroup label="Group 1">
+            <option>Option 1.1</option>
+          </optgroup> 
+          <optgroup label="Group 2">
+            <option>Option 2.1</option>
+            <option>Option 2.2</option>
+          </optgroup>
+          <optgroup label="Group 3" disabled>
+            <option>Option 3.1</option>
+            <option>Option 3.2</option>
+            <option>Option 3.3</option>
+          </optgroup>
+        </select>
+      </form>
+    </section>
+
+    <section>
+      <h1>Calculator - Leo</h1>
+      <form onsubmit="return false" oninput="o.value = parseInt(a.value) + parseInt(b.value)">
+        <input name="a" type="number" step="any"> +
+        <input name="b" type="number" step="any"> =
+        <output name="o" for="a b"></output>
+      </form>
+    </section>
+    
+
+    <section>
+      <h1>Credit Card - Leo</h1>
+      <form action="test.php" method="post" accept-charset="ISO-8859-1">
+        <fieldset>
+          <label>Card Type:</label>
+          <select name="select">
+          <option value="master">Master Card</option> 
+          <option value="visa" selected>Visa</option>
+          <option value="amex">Amex</option>
+        </select>
+        </fieldset>
+        <fieldset>
+          <label>Credit Card No.:</label>
+          <input type="text">
+        </fieldset>
+        <input type="submit" value="Purchase">
+      </form>
+    </section>
+    
+
+    <section>
+      <h1>Comments - Mu-wah</h1>
+      <form action="test.php" method="post">
+        <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+        <button name="button">Clear</button>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+    
+
+    <section>
+      <h1>Legend - Alex</h1>
+      <form action="test.php" method="post">
+        <fieldset>
+          <legend>Title</legend>
+          <input type="radio" name="radio" id="radio"> <label for="radio">Click me</label>
+        </fieldset>
+      </form>
+    </section>
+    
+
+    <section>
+      <h1>Upload - Marco</h1>
+      <form action="test.php" method="post">
+        <fieldset>
+          <legend>File</legend>
+          <input type="text">
+          <input type="submit" value="Upload">
+        </fieldset>
+        <progress value="70" max="100" role="progressbar">70 %</progress>
+      </form>
+    </section>
+    
+
+    <section>
+      <h1>Meters - Marco</h1>
+      <p>Default: min 0 max 1</p>
+      <p><meter min="0" max="100" value="25"></meter></p>
+      <p>With low and high</p>
+      <p><meter low="50" high="75" min="0" max="100" value="25"></meter></p>
+      <p><meter low="50" high="75" min="0" max="100" value="60"></meter></p>
+      <p><meter low="50" high="75" min="0" max="100" value="90"></meter></p>
+      <p>Working with optimum</p>
+      <p><meter low="50" high="75" optimum="100" min="0" max="100" value="25">B</meter></p>
+      <p><meter low="50" high="75" optimum="100" min="0" max="100" value="60">B</meter></p>
+      <p><meter low="50" high="75" optimum="100" min="0" max="100" value="90">B</meter></p>
+    </section>
+    
+  </body>
+</html>
+
+<!-- Tags Covered
+  <form>
+  <button>
+  <fieldset>
+  <input>
+  <label>
+  <legend>
+  <meter>
+  <optgroup>
+  <option>
+  <output> = "The output element represents the result of a calculation"
+  <progress>
+  <select>
+  <textarea>
+-->
+
+<!-- Attributes
+  method
+  action
+  for
+  accept-charset
+  autocomplete
+  novalidate
+ -->
